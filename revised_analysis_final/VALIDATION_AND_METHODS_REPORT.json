@@ -1,0 +1,41 @@
+{
+  "validation": {
+    "daily_records": 16436,
+    "period_start": "1981-01-01",
+    "period_end": "2025-12-31",
+    "missing_dates": 0,
+    "duplicate_dates": 0,
+    "negative_rainfall_values": 0,
+    "missing_daily_values": 0,
+    "annual_maximum_records": 45,
+    "annual_maxima_match_daily_recalculation": true,
+    "maximum_annual_maximum_difference_mm": 0.0,
+    "boundary_geojson_type": "FeatureCollection"
+  },
+  "daily_rainfall_mean_mm": 1.874451908707499,
+  "daily_rainfall_max_mm": 47.65863029651372,
+  "daily_rainfall_max_date": "1982-03-31",
+  "mean_annual_maximum_mm": 30.495397874435458,
+  "observation_duration_years": 45.00023956686311,
+  "gev_parameters": {
+    "c": 0.1602226604064737,
+    "loc": 27.49160037931763,
+    "scale": 6.849204970127006
+  },
+  "pot_threshold_mm": 11.419956627826762,
+  "pot_threshold_percentile": 95.0,
+  "pot_run_length_days": 3,
+  "pot_independent_events": 547,
+  "pot_event_rate_per_year": 12.15549084327087,
+  "gpd_parameters": {
+    "shape": -0.0941357952754848,
+    "location": 0.0,
+    "scale": 7.552704208044078
+  },
+  "bootstrap_replicates_requested": 1000,
+  "gev_bootstrap_successful": 1000,
+  "pot_bootstrap_successful": 1000,
+  "pot_confidence_interval_note": "Bootstrap resamples event count and event excesses; intervals remain conditional on the selected 95th-percentile threshold and 3-day declustering rule.",
+  "pot_return_period_definition": "Poisson annual-maximum exceedance probability equals 1/T; this is aligned with the GEV annual exceedance probability definition.",
+  "spatial_gev_warning": "Do not interpret the notebook's spatial GEV proxy map as a fitted return-level surface. It uses a fixed shape and a scale assumed to be 20% of mean annual maxima, rather than pixel-wise fitted GEV parameters."
+}

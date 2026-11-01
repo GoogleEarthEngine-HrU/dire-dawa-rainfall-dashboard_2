@@ -1,0 +1,2 @@
+Distribution,c_shape,loc_location,scale,Threshold_u,Threshold_percentile,Run_length_days,Independent_events,Observation_duration_years,Event_Rate_per_year,KS_statistic_descriptive_only,KS_p_value_descriptive_only
+GPD_MLE,-0.0941357952754848,0.0,7.552704208044078,11.419956627826762,95.0,3,547,45.00023956686311,12.15549084327087,0.026876625763599095,0.8140286626177515
