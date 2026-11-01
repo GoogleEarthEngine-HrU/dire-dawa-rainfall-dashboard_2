@@ -34,7 +34,7 @@ comparison_path = os.path.join(output_dir, "13_GEV_POT_Comparison_REVISED.csv")
 if os.path.exists(comparison_path):
   st.subheader("GEV vs POT Return Level Comparison")
   df_comp = pd.read_csv(comparison_path)
-  st.dataframe(df_comp, use_container_width=True)
+  st.dataframe(df_comp, width="stretch")
 
   st.bar_chart(
       df_comp.set_index("Return_Period_years")[
@@ -54,4 +54,4 @@ img_files = [
 selected_img = st.selectbox("Select Diagnostic Plot", img_files)
 img_path = os.path.join(output_dir, selected_img)
 if os.path.exists(img_path):
-  st.image(img_path, caption=selected_img, use_container_width=True)
+  st.image(img_path, caption=selected_img, width="stretch")
